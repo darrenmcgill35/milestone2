@@ -13,16 +13,23 @@
   border-radius: 8%;
 }
 
-.nav-link {
+.navbar-brand {
+  margin-right:0;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #034f84;
   font-family: Impact, Charcoal, sans-serif;
   font-size: 20px;
+  letter-spacing:2px;
+  
 }
 
 .header {
   background-image: linear-gradient(to right bottom, rgba(150, 100, 150, 0.6), rgba(120, 100, 96, 0.6)), url(../images/crokepark.jpg);
   background-position: center center;
   background-size: cover;
-  height: 100vh; 
+  height: 90vh; 
 }
 
 .heading-primary-main {
@@ -74,4 +81,20 @@
 .btn-white {
   background-color: #d7e0ef;
   color: #777;
+}
+
+.fixtures-section{
+  background-color:#d7e0ef;
+  text-align:center;
+}
+
+.fixtures-heading{
+  font-size: 80px;
+  font-weight: 200;
+  letter-spacing: 2px;
+  color: #034f84;
+  font-family: Impact, Charcoal, sans-serif;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  
 }
