@@ -65,10 +65,10 @@
   border-radius: 10rem;
   display: inline-block;
   font-size: 1.5rem;
-  padding: 1.5rem 4rem;
+  padding: 1rem 4rem;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Impact, Charcoal, sans-serif;
 }
 
 .btn:hover {
@@ -85,7 +85,7 @@
   text-align:center;
 }
 
-.fixtures-heading{
+.fixtures-heading {
   font-size: 80px;
   font-weight: 200;
   letter-spacing: 2px;
@@ -93,38 +93,35 @@
   font-family: Impact, Charcoal, sans-serif;
   padding-top: 20px;
   padding-bottom: 20px;
-  
 }
 
-.fixtures-section .match-item{
+.fixtures-list .match-item {
   background-color: white;
-  position: inherit;
   list-style-type: none;
 }
 
-.fixtures-section .match .roundname {
-  padding-left: 22px;
+.fixtures-list .match .roundname {
+  padding-left: 20px;
   font-weight: bold;
 }
 
-.fixtures-section .match .hometeam {
-  padding-left: 41px;
-  text-align: right;
+.fixtures-list .match .hometeam {
+  padding-left: 40px;
 }
 
-.fixtures-section .match .time {
-  padding-left: 22px;
+.fixtures-list .match .time {
+  padding-left: 20px;
   font-weight: bold;
   color: green;
 }
 
-.fixtures-section .match .awayteam {
-  padding-right: 41px;
-  padding-left: 22px;
+.fixtures-list .match .awayteam {
+  padding-right: 40px;
+  padding-left: 20px;
 }
 
-.fixtures-section .match .venue {
-  padding-right: 22px;
+.fixtures-list .match .venue {
+  padding-right: 20px;
   padding-left: 0;
   font-weight: bold;
 }
