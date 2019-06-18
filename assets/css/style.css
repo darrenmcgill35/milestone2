@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 
+/*--------------------------------------------logo*/
 .logo {
   width: 80%;
   max-width: 80px;
   height: auto;
 }
-
+/*--------------------------------------------nav*/
 .navbar-toggler {
   background-color: #d7e0ef;
 }
@@ -21,7 +22,7 @@
   letter-spacing:2px;
   
 }
-
+/*--------------------------------------------header*/
 .header {
   background-image: linear-gradient(to right bottom, rgba(150, 100, 150, 0.6), rgba(120, 100, 96, 0.6)), url(../images/crokepark.jpg);
   background-position: center center;
@@ -59,7 +60,7 @@
   transform: translate(-50%, -50%);
 }
 
-/**Button**/
+/*--------------------------------------------button*/
 
 .btn {
   border-radius: 10rem;
@@ -80,6 +81,7 @@
   color: #777;
 }
 
+/*--------------------------------------------fixtures section*/
 .fixtures-section{
   background-color:#d7e0ef;
   text-align:center;
@@ -122,7 +124,6 @@
   font-weight: bold;
   color: green;
   font-size: 20px;
-  float:center;
 }
 
 .fixtures-list .match-item .awayteam {
@@ -140,6 +141,11 @@
 }
 
 .crest-image{
-  height: 25px;
-  width:25px;
+  height: 30px;
+  width:30px;
+}
+
+/*--------------------------------------------Map*/
+div#map {
+    min-height: 360px;
 }
