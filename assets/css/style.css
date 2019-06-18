@@ -8,9 +8,6 @@
 
 .navbar-toggler {
   background-color: #d7e0ef;
-  height: 15px;
-  width: 15px;
-  border-radius: 8%;
 }
 
 .navbar-brand {
@@ -97,4 +94,37 @@
   padding-top: 20px;
   padding-bottom: 20px;
   
+}
+
+.fixtures-section .match-item{
+  background-color: white;
+  position: inherit;
+  list-style-type: none;
+}
+
+.fixtures-section .match .roundname {
+  padding-left: 22px;
+  font-weight: bold;
+}
+
+.fixtures-section .match .hometeam {
+  padding-left: 41px;
+  text-align: right;
+}
+
+.fixtures-section .match .time {
+  padding-left: 22px;
+  font-weight: bold;
+  color: green;
+}
+
+.fixtures-section .match .awayteam {
+  padding-right: 41px;
+  padding-left: 22px;
+}
+
+.fixtures-section .match .venue {
+  padding-right: 22px;
+  padding-left: 0;
+  font-weight: bold;
 }
