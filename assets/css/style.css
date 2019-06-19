@@ -147,5 +147,26 @@
 
 /*--------------------------------------------Map*/
 div#map {
-    min-height: 360px;
+    min-height: 400px;
+}
+
+.map-search{
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #d7e0ef;
+  font-size: 80px;
+  font-weight: 200;
+  letter-spacing: 2px;
+  color: #034f84;
+  font-family: Impact, Charcoal, sans-serif;
+  margin:0;
+}
+
+/*--------------------------------------------media queries*/
+
+@media (max-width: 768px) {
+  .roundname {
+    display: none;
+  }
 }
