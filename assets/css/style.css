@@ -178,6 +178,52 @@ div#map {
 #form-label{
   font-size: 32px;
 }
+
+/*--------------------------------------------footer*/
+
+.footer-social{
+  text-align: center;
+  padding-top: 0px;
+  padding-bottom: 20px;
+  background-color: #d7e0ef;
+}
+
+.social-links {
+    padding-bottom: 15px;
+}
+
+.social-links li a i {
+    width: 60px;
+    height: 60px;
+    padding: 22px 0;
+    border-radius: 20%;
+    font-size: 28px;
+    line-height: 12px;
+    text-align: center; 
+    background: #fff;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+#facebook{
+    color: #4267b2;
+}
+
+#instagram{
+    color: #bc2a8d;
+}
+
+#twitter{
+    color: #00aced;
+}
+
+
+.social-links li a i:hover {
+    background: #CCC8BC;
+}
+
 /*--------------------------------------------media queries*/
 
 @media (max-width: 768px) {
