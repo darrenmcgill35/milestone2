@@ -6,12 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Stadium Finder</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"type="text/css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
-          type="text/css">
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"type="text/css">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
 </head>
 
 <body>
@@ -27,7 +25,7 @@
             <div class="collapse navbar-collapse" id="navLinks">
                 <ul class="navbar-nav">
                     <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-                        <a class="nav-link" href="#fixtures">Fixtures</a>
+                        <a class="nav-link" href="#fix">Fixtures</a>
                     </li>
                     <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
                         <a class="nav-link" href="#map">Map</a>
@@ -188,8 +186,13 @@
     </section>
     
     <section class="container-fluid map-search">
-        <div>
-            <h2>Stadium Search</h2>
+        <div class="col-sm-6 offset-sm-3">
+            <form>
+             <div class="form-group">
+              <label id="form-label" for="exampleFormControlInput1">Stadium Search</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter a Venue">
+             </div>
+            </form>
         </div>
                 <div id="map"></div>
     </section>

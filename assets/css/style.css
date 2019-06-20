@@ -88,7 +88,6 @@
 }
 
 .fixtures-heading {
-  font-size: 80px;
   font-weight: 200;
   letter-spacing: 2px;
   color: #034f84;
@@ -96,6 +95,12 @@
   padding-top: 20px;
   padding-bottom: 20px;
   margin:0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px 0px 0px 0px;
 }
 
 .fixtures-list .match-item {
@@ -106,7 +111,7 @@
 }
 
 .fixtures-list .match-item .roundname {
-  padding-left: 5px;
+  padding-left: 15px;
   font-weight: bold;
   font-size: 20px;
   float: left;
@@ -133,7 +138,7 @@
 }
 
 .fixtures-list .match-item .venue {
-  padding-right: 5px;
+  padding-right: 15px;
   padding-left: 0;
   font-weight: bold;
   font-size: 20px;
@@ -162,7 +167,6 @@ div#map {
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: #d7e0ef;
-  font-size: 80px;
   font-weight: 200;
   letter-spacing: 2px;
   color: #034f84;
@@ -170,6 +174,10 @@ div#map {
   margin:0;
 }
 
+
+#form-label{
+  font-size: 32px;
+}
 /*--------------------------------------------media queries*/
 
 @media (max-width: 768px) {
