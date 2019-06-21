@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
+
 
 /*--------------------------------------------logo*/
 .logo {
@@ -16,12 +16,14 @@
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: #034f84;
+  color: #d7e0ef;
   font-family: Impact, Charcoal, sans-serif;
-  font-size: 20px;
-  letter-spacing:2px;
+  font-size: 25px;
+  letter-spacing:2.5px;
   
 }
+
+
 /*--------------------------------------------header*/
 .header {
   background-image: linear-gradient(to right bottom, rgba(150, 100, 150, 0.6), rgba(120, 100, 96, 0.6)), url(../images/crokepark.jpg);
@@ -155,6 +157,8 @@ ul {
   padding-top: 0px;
   padding-bottom: 5px;
 }
+
+
 
 
 /*--------------------------------------------Map*/
