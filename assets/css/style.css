@@ -167,22 +167,15 @@ div#map {
 }
 
 .map-search{
-  text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
   background-color: #d7e0ef;
-  font-weight: 200;
-  letter-spacing: 2px;
+}
+
+.mx-auto{
+  padding-top: 5px;
+  padding-bottom: 5px;
   color: #034f84;
-  font-family: Impact, Charcoal, sans-serif;
-  margin:0;
+  
 }
-
-
-#form-label{
-  font-size: 32px;
-}
-
 /*--------------------------------------------footer*/
 
 .footer-social{
