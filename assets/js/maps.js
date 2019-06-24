@@ -1,8 +1,9 @@
+
 function initMap() {
             var map = new google.maps.Map(document.getElementById("map"), {
                 zoom: 5,
                 center: {
-                    lat: 53.1424, 
+                    lat: 53.1424,
                     lng: -7.6921
                 }
             });
@@ -10,13 +11,13 @@ function initMap() {
             var labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
             
             var locations = [
-                { lat: 53.180386, lng: -6.789127 },
-                { lat: 54.185844, lng: -7.233676 },
-                { lat: 54.993387, lng: -7.333517 },
-                { lat: 53.739719, lng: -7.805265 },
-                { lat: 53.948207, lng: -8.076079 },
-                { lat: 54.163464, lng: -6.332909 }
-                
+                { lat: 54.186157, lng:-7.234731},
+                { lat: 54.179181, lng:-7.231587},  // ATM
+                { lat: 54.181417, lng:-7.234680},  // HOTEL
+                { lat: 54.179473, lng:-7.232005},  // BAR
+                { lat: 54.181691, lng:-7.233961},  // CARPARK
+                { lat: 54.181033, lng:-7.232363}   // CARPARK
+                 
             ];
             
             var markers = locations.map(function(location, i) {
@@ -28,5 +29,7 @@ function initMap() {
             var markerCluster = new MarkerClusterer(map, markers, {
                 imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
             });
-            }
+            }            
             
+        
+                
