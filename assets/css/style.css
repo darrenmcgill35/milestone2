@@ -15,14 +15,12 @@
   margin-right:0;
 }
 
-.navbar-light .navbar-nav .nav-link {
-  color: #d7e0ef;
+.navbar-light .navbar-nav .nav-link  {
+  color: #fff;
   font-family: Impact, Charcoal, sans-serif;
-  font-size: 25px;
+  font-size: 30px;
   letter-spacing:2.5px;
-  
 }
-
 
 /*--------------------------------------------header*/
 .header {
@@ -166,15 +164,8 @@ div#map {
     min-height: 400px;
 }
 
-.map-search{
+.map-section{
   background-color: #d7e0ef;
-}
-
-.mx-auto{
-  padding-top: 5px;
-  padding-bottom: 5px;
-  color: #034f84;
-  
 }
 /*--------------------------------------------footer*/
 
@@ -238,5 +229,13 @@ div#map {
 @media (min-width: 768px) {
   .venue-lg {
     display: none;
+  }
+}
+
+@media (max-width: 990px) {
+  .nav-link {
+    text-align: center;
+    background: #d7e0ef;
+    border-radius: 10px 10px 10px 10px;
   }
 }
