@@ -191,15 +191,19 @@
         <div class="container">
             <h2 id="text-center">Enter Venue</h2>
             <form id="location-form">
-                <input class="form-control form-control-lg" type="text" placeholder="Search" aria-label="Search">
+                <input id="location-input" class="form-control form-control-lg" type="text" placeholder="Search" aria-label="Search">
                 <br>
                 <button class="btn btn-rounded btn-block" type="submit">Search</button>
             </form>
+            
+                <div id="formatted-address"></div>
+                <div id="address-components"></div>
+                <div id="geometry"></div>
+                
             <br>
         </div>
                 <div id="map"></div>
                 
-                <div id="formatted-address"></div>
     </section>
     
     <footer class="container-fluid">
@@ -236,6 +240,7 @@
 
     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap&libraries=places&key=AIzaSyDj_Sw27lS1EGDp6aGNzfh9chD3YXd6A5c"></script>
+    <script src="https://maps.googleapis.com/maps/api/geocode/json"></script>
     <script src="assets/js/maps.js"></script>
 
 </body>
