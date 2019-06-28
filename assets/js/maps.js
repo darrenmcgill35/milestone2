@@ -12,12 +12,12 @@ var marker = new google.maps.Marker ({
         lng: -7.6921
     },
     map:map,
-    draggable: false
+    draggable: true
 });
 
 var searchBox = new google.maps.places.SearchBox(document.getElementById('location-input'));
 
-google.maps.event.addEventListener(searchBox, 'places_changed', function(){
+google.maps.event.addListener(searchBox, 'places_changed', function(){
    // console.log(searchBox.getPlaces());
    
    var places = searchBox.getPlaces();
@@ -27,7 +27,7 @@ google.maps.event.addEventListener(searchBox, 'places_changed', function(){
    var bounds = new google.maps.LatLngBounds();
    var i, place;
    
-   for (i=0; place=place[i];i++){
+   for (i=0; place=places[i];i++){
        console.log(place.geometry.location);
        
        bounds.extend(place.geometry.location);
