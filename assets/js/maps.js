@@ -1,4 +1,15 @@
 var map;
+var marker;
+
+var stadiums = [
+  ['Newbridge', 53.179731, -6.794853],
+  ['Derry', 54.993350, -7.333496],
+  ['Longford', 53.739839, -7.805263],
+  ['Carrick-on-shannon', 53.948194, -8.075821],
+  ['Clones', 54.186091, -7.234708]
+  ['Newry', 54.163533, -6.332810]
+];
+
 
 function initMap() {
             var options = {
@@ -7,13 +18,32 @@ function initMap() {
             };
             
             map = new google.maps.Map(document.getElementById('map'),options);
+         
+            marker = new google.maps.Marker({
+                     map: map,
+                     draggable: false,
+                     animation: google.maps.Animation.DROP,
+                     position: stadiums
+            });
             
-            
+            marker.addListener('click', toggleBounce);
+    }
+
+            function toggleBounce() {
+                 if (marker.getAnimation() !== null) {
+                     marker.setAnimation(null);
+         }
+                 else {
+                     marker.setAnimation(google.maps.Animation.BOUNCE);
+         }   
+
+
+
 //geocode();
 
 // get location form
 
-var locationForm = document.getElementById('location-form')
+var locationForm = document.getElementById('location-form');
 
 //listen for submit
 
