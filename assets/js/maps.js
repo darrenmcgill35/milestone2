@@ -3,7 +3,7 @@ var map = new google.maps.Map(document.getElementById('map'),{
         lat:53.1424,
         lng: -7.6921
     },
-    zoom:8
+    zoom:6
 });
 
 var marker = new google.maps.Marker ({
@@ -12,7 +12,7 @@ var marker = new google.maps.Marker ({
         lng: -7.6921
     },
     map:map,
-    draggable: true
+    draggable: false
 });
 
 var searchBox = new google.maps.places.SearchBox(document.getElementById('location-input'));
@@ -36,6 +36,6 @@ google.maps.event.addListener(searchBox, 'places_changed', function(){
    }
    
    map.fitBounds(bounds);
-   map.setZoom(12);
+   map.setZoom(15);
    
 });
