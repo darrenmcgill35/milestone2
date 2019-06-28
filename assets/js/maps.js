@@ -1,12 +1,12 @@
-//var map;
+var map;
 
-//function initMap() {
-            //var options = {
-              //  center: {lat: 53.1424,lng: -7.6921},
-              //  zoom: 6
-          //  };
+function initMap() {
+            var options = {
+                center: {lat: 53.1424,lng: -7.6921},
+                zoom: 6
+            };
             
-          //  map = new google.maps.Map(document.getElementById('map'),options);
+            map = new google.maps.Map(document.getElementById('map'),options);
             
             
 //geocode();
@@ -85,4 +85,5 @@ function geocode(e) {
     });
     
     
+}
 }
