@@ -1,10 +1,14 @@
-var map = new google.maps.Map(document.getElementById('map'),{
+
+function initMap(){
+    var map = new google.maps.Map(document.getElementById('map'),{
     center: {
-        lat:53.1424,
+        lat: 53.1424,
         lng: -7.6921
     },
     zoom:6
-});
+    }
+
+);
 
 var marker = new google.maps.Marker ({
     position:{
@@ -39,3 +43,4 @@ google.maps.event.addListener(searchBox, 'places_changed', function(){
    map.setZoom(15);
    
 });
+}
