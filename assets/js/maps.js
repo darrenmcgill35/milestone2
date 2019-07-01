@@ -37,7 +37,7 @@ google.maps.event.addListener(searchBox, 'places_changed', function(){
    }
    
    map.fitBounds(bounds);
-   map.setZoom(15);
+   map.setZoom(12);
   
 });
 
@@ -58,10 +58,17 @@ google.maps.event.addListener(searchBox, 'places_changed', function(){
           },
           travel: {
             icon: iconBase + 'bus.png'
+          },
+          stadium: {
+            icon: iconBase + 'play.png'
           }
         };
         
         var features = [
+          {
+            position: new google.maps.LatLng(54.185869, -7.233718),
+            type: 'stadium'
+          },
           {
             position: new google.maps.LatLng(54.181342, -7.234525),
             type: 'atm'
@@ -74,7 +81,23 @@ google.maps.event.addListener(searchBox, 'places_changed', function(){
           }, {
             position: new google.maps.LatLng(54.181603, -7.225900),
             type: 'atm'
+          },  {
+            position: new google.maps.LatLng(54.186379, -7.234286),
+            type: 'parking'
+          },  {
+            position: new google.maps.LatLng(54.181709, -7.233572),
+            type: 'parking'
+          } , {
+            position: new google.maps.LatLng(54.179530, -7.232154),
+            type: 'bars'
+          },  {
+            position: new google.maps.LatLng(54.180887, -7.233958),
+            type: 'bars'
+          } , {
+            position: new google.maps.LatLng(54.181540, -7.232144),
+            type: 'travel'
           }
+          
         ];
 
         // Create markers.
@@ -83,7 +106,7 @@ google.maps.event.addListener(searchBox, 'places_changed', function(){
             position: features[i].position,
             icon: icons[features[i].type].icon,
             map: map
-          })
+          });
         }
         
           var markerCluster = new MarkerClusterer(map, markers, {
