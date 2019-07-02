@@ -13,8 +13,13 @@ var marker = new google.maps.Marker ({
         lng: -7.6921
     },
     map:map,
-    draggable: false
+    draggable: false,
+    
 });
+
+function clearMarkers() {
+        setMapOnAll(null);
+      }
 
 var searchBox = new google.maps.places.SearchBox(document.getElementById('location-input'));
 
@@ -49,6 +54,7 @@ google.maps.event.addListener(searchBox, 'places_changed', function(){
         var icons = {
           parking: {
             icon: iconBase + 'parking_lot.png'
+            
           },
           atm: {
             icon: iconBase + 'euro.png'
@@ -103,8 +109,10 @@ google.maps.event.addListener(searchBox, 'places_changed', function(){
         // Create markers.
         for (var i = 0; i < features.length; i++) {
           var markers = new google.maps.Marker({
+            title: 'PEPSized',
             position: features[i].position,
             icon: icons[features[i].type].icon,
+            scaledSize: new google.maps.Size(48, 48),
             map: map
           });
         }
