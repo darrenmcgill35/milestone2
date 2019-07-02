@@ -4,7 +4,19 @@ function initMap(){
     center: new google.maps.LatLng(53.1424, -7.6921),
     zoom:6
     }
+
 );
+
+var marker = new google.maps.Marker ({
+    position:{
+        lat:53.1424,
+        lng: -7.6921
+    },
+    map:map,
+    draggable: false,
+    
+});
+marker.setMap(null);
 
 var searchBox = new google.maps.places.SearchBox(document.getElementById('location-input'));
 
@@ -94,6 +106,7 @@ google.maps.event.addListener(searchBox, 'places_changed', function(){
         // Create markers.
         for (var i = 0; i < features.length; i++) {
           var markers = new google.maps.Marker({
+            title: 'PEPSized',
             position: features[i].position,
             icon: icons[features[i].type].icon,
             scaledSize: new google.maps.Size(48, 48),
