@@ -37,8 +37,9 @@
         <h1 class="heading-one">
             <span class="heading-primary-main">Stadium Finder</span>
             <span class="heading-primary-sub">Plan your Match Day</span>
+            <span class = "heading-venue">Just click on the venue to plan</span>
         </h1>
-        <a href="#map" class="btn btn-white">Search</a>
+        
     </div>
 </header>
 <section class="container-fluid fixtures-section" id="fix">
@@ -60,12 +61,12 @@
                                 <img src="assets/images/kildare.jpg" alt="crest" class="crest-image">
                         <span class="awayteam">Kildare
                                     </span>
-                        <span class="venue newbridge">Newbridge</span>
+                        <span class="venue newbridge" ><a href="#map">Newbridge</a></span>
                         </span>
             </li>
         </ul>
         <div class="venue-lg">
-            <h5 id="venue-text" class="newbridge">Venue: Newbridge</h5>
+            <h5 id="venue-text" class="newbridge"><a href="#map">Venue: Newbridge</a></h5>
         </div>
         <ul>
             <li class="match-item football text-center">
@@ -80,12 +81,12 @@
                                 <img src="assets/images/laois.jpg" alt="crest" class="crest-image">
                         <span class="awayteam">Laois
                                     </span>
-                        <span class="venue">Derry</span>
+                        <span class="venue derry"><a href="#map">Derry</a></span>
                         </span>
             </li>
         </ul>
         <div class="venue-lg">
-            <h5 id="venue-text">Venue: Derry</h5>
+            <h5 id="venue-text" class="derry"><a href="#map">Venue: Derry</a></h5>
         </div>
         <ul>
             <li class="match-item football text-center">
@@ -100,12 +101,12 @@
                                 <img src="assets/images/tyrone.jpg" alt="crest" class="crest-image">
                         <span class="awayteam">Tyrone
                                     </span>
-                        <span class="venue">Longford</span>
+                        <span class="venue longford"><a href="#map">Longford</a></span>
                         </span>
             </li>
         </ul>
         <div class="venue-lg">
-            <h5 id="venue-text">Venue: Longford</h5>
+            <h5 id="venue-text" class="longford"><a href="#map">Venue: Longford</a></h5>
         </div>
         <ul>
             <li class="match-item football text-center">
@@ -120,12 +121,12 @@
                                 <img src="assets/images/clare.jpg" alt="crest" class="crest-image">
                         <span class="awayteam">Clare
                                     </span>
-                        <span class="venue">Carrick-on-Shannon</span>
+                        <span class="venue carrick"><a href="#map">Carrick-on-Shannon</a></span>
                         </span>
             </li>
         </ul>
         <div class="venue-lg">
-            <h5 id="venue-text">Venue: Carrick-on-Shannon</h5>
+            <h5 id="venue-text" class="carrick"><a href="#map">Venue: Carrick-on-Shannon</a></h5>
         </div>
         <ul>
             <li class="match-item football text-center">
@@ -140,12 +141,12 @@
                                 <img src="assets/images/armagh.jpg" alt="crest" class="crest-image">
                         <span class="awayteam">Armagh
                                     </span>
-                        <span class="venue clones">Clones</span>
+                        <span class="venue clones"><a href="#map">Clones</a></span>
                         </span>
             </li>
         </ul>
         <div class="venue-lg">
-            <h5 id="venue-text" class="clones">Venue: Clones</h5>
+            <h5 id="venue-text" class="clones"><a href="#map">Venue: Clones</a></h5>
         </div>
         <ul>
             <li class="match-item football text-center">
@@ -160,25 +161,27 @@
                                 <img src="assets/images/mayo.jpg" alt="crest" class="crest-image">
                         <span class="awayteam">Mayo
                                     </span>
-                        <span class="venue">Newry</span>
+                        <span class="venue newry"><a href="#map">Newry</a></span>
                         </span>
             </li>
         </ul>
         <div class="venue-lg">
-            <h5 id="venue-text">Venue: Newry</h5>
+            <h5 id="venue-text" class="newry"><a href="#map">Venue: Newry</a></h5>
         </div>
     </div>
 </section>
-<br>
+
 <section class="map-section">
     <div id="map"></div>
 </section>
+
 <div class="jumbotron jumbotron-fluid">
     <div class="container look-here">
         <h1 class="display-4" id="place_name">Place name</h1>
         <p class="lead" id="info_text">Info for the place.</p>
     </div>
 </div>
+
 <footer class="container-fluid">
     <div class="row">
         <div class="col-12 footer-social">
@@ -215,7 +218,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDj_Sw27lS1EGDp6aGNzfh9chD3YXd6A5c&libraries=places&callback=initMap"></script>-->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDj_Sw27lS1EGDp6aGNzfh9chD3YXd6A5c&libraries=places&callback=initMap"></script>
 <script src="assets/js/maps.js"></script>
 </body>
 </html>

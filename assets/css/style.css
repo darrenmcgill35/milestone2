@@ -10,18 +10,15 @@
 .navbar-toggler {
   background-color: #d7e0ef;
 }
-
 .navbar-brand {
   margin-right:0;
 }
-
 .navbar-light .navbar-nav .nav-link  {
   color: #fff;
   font-family: Impact, Charcoal, sans-serif;
   font-size: 30px;
   letter-spacing:2.5px;
 }
-
 /*--------------------------------------------header*/
 .header {
   background-image: linear-gradient(to right bottom, rgba(150, 100, 150, 0.6), rgba(120, 100, 96, 0.6)), url(../images/crokepark.jpg);
@@ -29,7 +26,6 @@
   background-size: cover;
   height: 90vh; 
 }
-
 .heading-primary-main {
   display: block;
   font-size: 60px;
@@ -39,7 +35,6 @@
   color: #d7e0ef;
   font-family: Impact, Charcoal, sans-serif;
 }
-
 .heading-primary-sub {
   display: block;
   font-size: 30px;
@@ -52,6 +47,15 @@
   padding-bottom: 20px;
 }
 
+.heading-venue{
+   display: block;
+  font-size: 30px;
+  color: #d7e0ef;
+  font-family: sans-serif;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
 .text-box {
   position: absolute;
   top: 40%;
@@ -59,9 +63,7 @@
   text-align: center;
   transform: translate(-50%, -50%);
 }
-
 /*--------------------------------------------button*/
-
 .btn {
   border-radius: 10rem;
   display: inline-block;
@@ -71,22 +73,18 @@
   text-transform: uppercase;
   font-family: Impact, Charcoal, sans-serif;
 }
-
 .btn:hover {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
-
 .btn-white {
   background-color: #d7e0ef;
   color: #777;
 }
-
 /*--------------------------------------------fixtures section*/
 .fixtures-section{
   background-color:#d7e0ef;
   text-align:center;
 }
-
 .fixtures-heading {
   font-weight: 200;
   letter-spacing: 2px;
@@ -96,33 +94,28 @@
   padding-bottom: 20px;
   margin:0;
 }
-
 ul {
   list-style-type: none;
   margin: 0;
   padding: 10px 0px 0px 0px;
 }
-
 .fixtures-list .match-item {
   background-color: white;
   list-style-type: none;
   padding-top: 20px;
   padding-bottom:20px;
 }
-
 .fixtures-list .match-item .roundname {
   padding-left: 15px;
   font-weight: bold;
   font-size: 20px;
   float: left;
 }
-
 .fixtures-list .match-item .hometeam {
   padding-left:10px;
   padding-right:5px;
   font-size: 20px;
 }
-
 .fixtures-list .match-item .time {
   padding-left:5px;
   padding-right:5px;
@@ -130,13 +123,11 @@ ul {
   color: green;
   font-size: 20px;
 }
-
 .fixtures-list .match-item .awayteam {
   padding-right: 10px;
   padding-left: 5px;
   font-size: 20px
 }
-
 .fixtures-list .match-item .venue {
   padding-right: 15px;
   padding-left: 0;
@@ -144,42 +135,32 @@ ul {
   font-size: 20px;
   float:right;
 }
-
 .crest-image{
   height: 30px;
   width:30px;
 }
-
 #venue-text{
   font-weight: bold;
   padding-top: 0px;
   padding-bottom: 5px;
 }
-
-
-
-
 /*--------------------------------------------Map*/
 div#map {
-    min-height: 400px;
+    min-height: 450px;
 }
-
 .map-section{
   background-color: #d7e0ef;
 }
 /*--------------------------------------------footer*/
-
 .footer-social{
   text-align: center;
   padding-top: 0px;
   padding-bottom: 20px;
   background-color: #d7e0ef;
 }
-
 .social-links {
     padding-bottom: 15px;
 }
-
 .social-links li a i {
     width: 60px;
     height: 60px;
@@ -194,26 +175,22 @@ div#map {
     -webkit-transition: all 0.35s ease-in-out;
     -o-transition: all 0.35s ease-in-out;
 }
-
 #facebook{
     color: #4267b2;
 }
-
 #instagram{
     color: #bc2a8d;
 }
-
 #twitter{
     color: #00aced;
 }
-
-
 .social-links li a i:hover {
     background: #CCC8BC;
 }
-
+.look-here {
+  visibility: hidden;
+}
 /*--------------------------------------------media queries*/
-
 @media (max-width: 768px) {
   .roundname {
     display: none;
@@ -225,13 +202,11 @@ div#map {
     display: none;
   }
 }
-
 @media (min-width: 768px) {
   .venue-lg {
     display: none;
   }
 }
-
 @media (max-width: 990px) {
   .nav-link {
     text-align: center;
