@@ -155,7 +155,7 @@ div#map {
 .footer-social{
   text-align: center;
   padding-top: 0px;
-  padding-bottom: 20px;
+  padding-bottom: 0px;
   background-color: #d7e0ef;
 }
 .social-links {
@@ -187,6 +187,11 @@ div#map {
 .social-links li a i:hover {
     background: #CCC8BC;
 }
+
+.jumbotron{
+  margin-bottom: 0rem;
+}
+
 .look-here {
   visibility: hidden;
 }
