@@ -64,8 +64,13 @@ $(".newbridge").click(function () {
     }
     marker.setMap(map);
     
+
     $(".look-here").css( "visibility", "visible");
+    $("#place_name").html("<h3>St. Conleth's GAA Park, Newbridge Co. Kildare</h3>");
+    $("#info_text") .html("<h5>Capacity - 6,200</h5>");
 });
+
+
 
 $(".derry").click(function () {
     // do something for derry
@@ -110,7 +115,10 @@ $(".derry").click(function () {
     }
     marker.setMap(map);
     
+   
     $(".look-here").css( "visibility", "visible");
+    $("#place_name").html("<h3>Celtic Park,Lone Moor Rd Co. Derry</h3>");
+    $("#info_text") .html("<h5>Capacity - 18,500</h5>");
 });
    
 $(".longford").click(function () {
@@ -154,6 +162,8 @@ $(".longford").click(function () {
     marker.setMap(map);
     
     $(".look-here").css( "visibility", "visible");
+    $("#place_name").html("<h3> Pearse Park, Longford</h3>");
+    $("#info_text") .html("<h5>Capacity - 10,000</h5>");
 });
 
 $(".carrick").click(function () {
@@ -200,6 +210,8 @@ $(".carrick").click(function () {
     marker.setMap(map);
     
     $(".look-here").css( "visibility", "visible");
+    $("#place_name").html("<h3>Páirc Seán Mac Diarmada, Carrick-On-Shannon</h3>");
+    $("#info_text") .html("<h5>Capacity - 9,331</h5>");
 });
 
 
@@ -250,6 +262,8 @@ $(".clones").click(function () {
     marker.setMap(map);
     
     $(".look-here").css( "visibility", "visible");
+    $("#place_name").html("<h3>St Tiernach's Park, Clones, Co. Monaghan</h3>");
+    $("#info_text") .html("<h5>Capacity - 36,000</h5>");
 });
 
 $(".newry").click(function () {
@@ -296,6 +310,8 @@ $(".newry").click(function () {
     marker.setMap(map);
     
     $(".look-here").css( "visibility", "visible");
+    $("#place_name").html("<h3>Páirc Esler, Newry, Co. Down</h3>");
+    $("#info_text") .html("<h5>Capacity - 25,000</h5>");
 });
 
 function initMap() {
