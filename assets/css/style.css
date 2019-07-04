@@ -63,23 +63,7 @@
   text-align: center;
   transform: translate(-50%, -50%);
 }
-/*--------------------------------------------button*/
-.btn {
-  border-radius: 10rem;
-  display: inline-block;
-  font-size: 1.5rem;
-  padding: 1rem 4rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-family: Impact, Charcoal, sans-serif;
-}
-.btn:hover {
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-}
-.btn-white {
-  background-color: #d7e0ef;
-  color: #777;
-}
+
 /*--------------------------------------------fixtures section*/
 .fixtures-section{
   background-color:#d7e0ef;
@@ -194,6 +178,24 @@ div#map {
 
 .look-here {
   visibility: hidden;
+}
+
+/*--------------------------------------------button*/
+.btn {
+  border-radius: 10rem;
+  display: inline-block;
+  font-size: 1.5rem;
+  padding: 1rem 4rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Impact, Charcoal, sans-serif;
+}
+.btn:hover {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+.btn-white {
+  background-color: #d7e0ef;
+  color: #777;
 }
 /*--------------------------------------------media queries*/
 @media (max-width: 768px) {
