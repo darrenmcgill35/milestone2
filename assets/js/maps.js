@@ -25,6 +25,15 @@ $(".newbridge").click(function () {
         zoom: 16
     });
     
+    var contentString = '<h1 >Newbridge</h1>'+
+            '<p><b>Newbridge Co. Kildare</b></p>';
+            
+    var infowindow = new google.maps.InfoWindow({
+          content: contentString
+        });
+        
+    
+    
     //set the features
     const features = [
         {
@@ -61,6 +70,11 @@ $(".newbridge").click(function () {
             icon: icons[features[i].type].icon,
             map: map
         });
+        
+    marker.addListener('click', function() {
+          infowindow.open(map, marker);
+        });
+            
     }
     marker.setMap(map);
     
