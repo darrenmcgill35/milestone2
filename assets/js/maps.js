@@ -25,8 +25,10 @@ $(".newbridge").click(function () {
         zoom: 16
     });
     
-    var contentString = '<h1 >Newbridge</h1>'+
-            '<p><b>Newbridge Co. Kildare</b></p>';
+    var contentString = '<p>Parking - North & South Carparks (FREE)</p>'+
+            '<p>Bus-Stop - On Main St. <a href="https://www.buseireann.ie/news_timetable.php" target="_blank">TIMETABLE</a></p>'+
+            '<p>ATM - On Edward st. & Liffey View</p>'
+            +'<p>Bars & Restaurants - On Main St. Charlotte St. & Edward St.  </p>';
             
     var infowindow = new google.maps.InfoWindow({
           content: contentString
