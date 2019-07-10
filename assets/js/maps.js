@@ -83,7 +83,7 @@ $(".newbridge").click(function () {
 
     $(".look-here").css( "visibility", "visible");
     $("#place_name").html("<h3>St. Conleth's GAA Park, Newbridge Co. Kildare</h3>");
-    $("#info_text") .html("<h5>Capacity - 6,200</h5>");
+    $("#info_text") .html("<h5>Capacity - 6,200. SAT NAV - 53.179696N -6.794644W</h5>");
 });
 
 
@@ -94,6 +94,16 @@ $(".derry").click(function () {
         center: {lat: 54.992999, lng: -7.333914},
         zoom: 16
     });
+    
+    var contentString = '<p>Parking - North of Stadium & Cecilias College (FREE)</p>'+
+            '<p>Bus-Stop - On Blighs Lane. <a href="https://www.translink.co.uk/timetables" target="_blank">TIMETABLE</a></p>'+
+            '<p>ATM - In Harkins Newsagents on Lecky Road</p>'
+            +'<p>Bars & Restaurants - On Brandywell Road & Lecky Road  </p>';
+            
+    var infowindow = new google.maps.InfoWindow({
+          content: contentString
+        });
+        
     
     //set the features
     const features = [
@@ -128,13 +138,18 @@ $(".derry").click(function () {
             icon: icons[features[i].type].icon,
             map: map
         });
+        
+        marker.addListener('click', function() {
+          infowindow.open(map, marker);
+        });
+        
     }
     marker.setMap(map);
     
    
     $(".look-here").css( "visibility", "visible");
     $("#place_name").html("<h3>Celtic Park,Lone Moor Rd Co. Derry</h3>");
-    $("#info_text") .html("<h5>Capacity - 18,500</h5>");
+    $("#info_text") .html("<h5>Capacity - 18,500. SAT NAV - 54.993368N -7.333485W</h5>");
 });
    
 $(".longford").click(function () {
@@ -143,6 +158,15 @@ $(".longford").click(function () {
         center: {lat: 53.738881,  lng: -7.803449},
         zoom: 13
     });
+    
+    var contentString = '<p>Parking - South of Stadium & Retail Park ( North of Stadium ) (FREE)</p>'+
+            '<p>Bus-Stop - On 98 Ave. <a  href="http://www.irishrail.ie/train-timetables" target="_blank">TIMETABLE</a></p>'+
+            '<p>ATM - Circle K on R198</p>'
+            +'<p>Bars & Restaurants - On Main St.  </p>';
+            
+    var infowindow = new google.maps.InfoWindow({
+          content: contentString
+        });
     
     //set the features
     const features = [
@@ -174,12 +198,16 @@ $(".longford").click(function () {
             icon: icons[features[i].type].icon,
             map: map
         });
+        
+        marker.addListener('click', function() {
+          infowindow.open(map, marker);
+        });
     }
     marker.setMap(map);
     
     $(".look-here").css( "visibility", "visible");
     $("#place_name").html("<h3> Pearse Park, Longford</h3>");
-    $("#info_text") .html("<h5>Capacity - 10,000</h5>");
+    $("#info_text") .html("<h5>Capacity - 10,000. SAT NAV - 53.739689N -7.805238W</h5>");
 });
 
 $(".carrick").click(function () {
@@ -188,6 +216,15 @@ $(".carrick").click(function () {
         center: {lat: 53.947879,   lng: -8.079018},
         zoom: 15
     });
+    
+    var contentString = '<p>Parking - South of Stadium & Rosebank Retail Park (FREE)</p>'+
+            '<p>Bus-Stop - On Bypass Road. <a href="https://www.buseireann.ie/news_timetable.php" target="_blank">TIMETABLE</a></p>'+
+            '<p>ATM - Main St & N4 Service Station</p>'
+            +'<p>Bars & Restaurants - On Main St.  </p>';
+            
+    var infowindow = new google.maps.InfoWindow({
+          content: contentString
+        });
     
     //set the features
     const features = [
@@ -222,12 +259,16 @@ $(".carrick").click(function () {
             icon: icons[features[i].type].icon,
             map: map
         });
+        
+        marker.addListener('click', function() {
+          infowindow.open(map, marker);
+        });
     }
     marker.setMap(map);
     
     $(".look-here").css( "visibility", "visible");
     $("#place_name").html("<h3>Páirc Seán Mac Diarmada, Carrick-On-Shannon</h3>");
-    $("#info_text") .html("<h5>Capacity - 9,331</h5>");
+    $("#info_text") .html("<h5>Capacity - 9,331. SAT NAV - 53.948194N -8.076132W</h5>");
 });
 
 
@@ -238,6 +279,17 @@ $(".clones").click(function () {
         center: {lat: 54.183449,  lng: -7.234562},
         zoom: 15
     });
+    
+    var contentString = '<p>Parking - North of Stadium & 98 Ave (FREE)</p>'+
+            '<p>Bus-Stop - On 98 Ave. <a href="https://www.buseireann.ie/news_timetable.php" target="_blank">TIMETABLE</a></p>'+
+            '<p>ATM - On Fermanagh st. & The Diamond</p>'
+            +'<p>Bars & Restaurants - On Fermanagh St.  </p>';
+            
+    var infowindow = new google.maps.InfoWindow({
+          content: contentString
+        });
+        
+        
     //set the features
     const features = [
         {
@@ -274,12 +326,17 @@ $(".clones").click(function () {
             icon: icons[features[i].type].icon,
             map: map
         });
+        
+        marker.addListener('click', function() {
+          infowindow.open(map, marker);
+        });
+        
     }
     marker.setMap(map);
     
     $(".look-here").css( "visibility", "visible");
     $("#place_name").html("<h3>St Tiernach's Park, Clones, Co. Monaghan</h3>");
-    $("#info_text") .html("<h5>Capacity - 36,000</h5>");
+    $("#info_text") .html("<h5>Capacity - 36,000. SAT NAV - 54.185870N -7.233751W</h5>");
 });
 
 $(".newry").click(function () {
@@ -288,6 +345,15 @@ $(".newry").click(function () {
         center: {lat: 54.168533,  lng:  -6.340492 },
         zoom: 14
     });
+    
+    var contentString = '<p>Parking - Warrenpoint Road & Buttercrane Centre (FREE)</p>'+
+            '<p>Train Station - Just off the A1 motorway <a href="https://www.translink.co.uk/" target="_blank">TIMETABLE</a></p>'+
+            '<p>ATM - On Albert Basin</p>'
+            +'<p>Bars & Restaurants - Buttercrane Centre & Quays</p>';
+            
+    var infowindow = new google.maps.InfoWindow({
+          content: contentString
+        });
     
     //set the features
     const features = [
@@ -322,12 +388,16 @@ $(".newry").click(function () {
             icon: icons[features[i].type].icon,
             map: map
         });
+        
+        marker.addListener('click', function() {
+          infowindow.open(map, marker);
+        });
     }
     marker.setMap(map);
     
     $(".look-here").css( "visibility", "visible");
     $("#place_name").html("<h3>Páirc Esler, Newry, Co. Down</h3>");
-    $("#info_text") .html("<h5>Capacity - 25,000</h5>");
+    $("#info_text") .html("<h5>Capacity - 25,000. SAT NAV - 54.163446N -6.333132W</h5>");
 });
 
 function initMap() {
