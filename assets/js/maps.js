@@ -1,20 +1,20 @@
-const iconBase = 'http://maps.google.com/mapfiles/kml/shapes/';
+const iconBase = 'http://maps.google.com/mapfiles/kml/pal2/';
 
 const icons = {
     parking: {
-        icon: iconBase + 'parking_lot.png'
+        icon: iconBase + 'icon47.png'
     },
     atm: {
-        icon: iconBase + 'euro.png'
+        icon: iconBase + 'icon58.png'
     },
     bars: {
-        icon: iconBase + 'bars.png'
+        icon: iconBase + 'icon32.png'
     },
     travel: {
-        icon: iconBase + 'bus.png'
+        icon: iconBase + 'icon39.png'
     },
     stadium: {
-        icon: iconBase + 'play.png'
+        icon: iconBase + 'icon49.png'
     }
 };
 
