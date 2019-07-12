@@ -1,12 +1,18 @@
-
+@import url('https://fonts.googleapis.com/css?family=Impact:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 
 /*--------------------------------------------logo*/
+
+
 .logo {
   width: 80%;
   max-width: 80px;
   height: auto;
 }
+
+
 /*--------------------------------------------nav*/
+
+
 .navbar-toggler {
   background-color: #d7e0ef;
 }
@@ -19,7 +25,11 @@
   font-size: 30px;
   letter-spacing:2.5px;
 }
+
+
 /*--------------------------------------------header*/
+
+
 .header {
   background-image: linear-gradient(to right bottom, rgba(150, 100, 150, 0.6), rgba(120, 100, 96, 0.6)), url(../images/crokepark.jpg);
   background-position: center center;
@@ -64,7 +74,10 @@
   transform: translate(-50%, -50%);
 }
 
+
 /*--------------------------------------------fixtures section*/
+
+
 .fixtures-section{
   background-color:#d7e0ef;
   text-align:center;
@@ -128,14 +141,22 @@ ul {
   padding-top: 0px;
   padding-bottom: 5px;
 }
+
+
 /*--------------------------------------------Map*/
+
+
 div#map {
     min-height: 450px;
 }
 .map-section{
   background-color: #d7e0ef;
 }
+
+
 /*--------------------------------------------footer*/
+
+
 .footer-social{
   text-align: center;
   padding-top: 0px;
@@ -181,7 +202,10 @@ div#map {
   visibility: hidden;
 }
 
+
 /*--------------------------------------------button*/
+
+
 .btn {
   border-radius: 10rem;
   display: inline-block;
@@ -198,7 +222,11 @@ div#map {
   background-color: #d7e0ef;
   color: #777;
 }
+
+
 /*--------------------------------------------media queries*/
+
+
 @media (max-width: 768px) {
   .roundname {
     display: none;

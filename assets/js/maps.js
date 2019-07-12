@@ -1,3 +1,5 @@
+//set the icons
+
 const iconBase = 'http://maps.google.com/mapfiles/kml/pal2/';
 
 const icons = {
@@ -18,6 +20,9 @@ const icons = {
     }
 };
 
+
+//set newbridge on the map
+
 $(".newbridge").click(function () {
     // do something for newbridge
     map = new google.maps.Map(document.getElementById('map'), {
@@ -25,6 +30,8 @@ $(".newbridge").click(function () {
         zoom: 16
     });
     
+//set the info window
+
     var contentString = '<p>Parking - North & South Carparks (FREE)</p>'+
             '<p>Bus-Stop - On Main St. <a href="https://www.buseireann.ie/news_timetable.php" target="_blank">TIMETABLE</a></p>'+
             '<p>ATM - On Edward st. & Liffey View</p>'
@@ -36,7 +43,7 @@ $(".newbridge").click(function () {
         
     
     
-    //set the features
+//set the features
     const features = [
         {
             position: new google.maps.LatLng(53.179693, -6.794662),
@@ -65,7 +72,7 @@ $(".newbridge").click(function () {
             type: 'travel'
         }
     ];
-    // Create markers.
+// Create markers.
     for (let i = 0; i < features.length; i++) {
         var marker = new google.maps.Marker({
             position: features[i].position,
@@ -80,6 +87,7 @@ $(".newbridge").click(function () {
     }
     marker.setMap(map);
     
+//set the Jumbotron
 
     $(".look-here").css( "visibility", "visible");
     $("#place_name").html("<h3>St. Conleth's GAA Park, Newbridge Co. Kildare</h3>");
@@ -87,6 +95,7 @@ $(".newbridge").click(function () {
 });
 
 
+//set Derry on the map
 
 $(".derry").click(function () {
     // do something for derry
@@ -95,6 +104,8 @@ $(".derry").click(function () {
         zoom: 16
     });
     
+//set the info window
+
     var contentString = '<p>Parking - North of Stadium & Cecilias College (FREE)</p>'+
             '<p>Bus-Stop - On Blighs Lane. <a href="https://www.translink.co.uk/timetables" target="_blank">TIMETABLE</a></p>'+
             '<p>ATM - In Harkins Newsagents on Lecky Road</p>'
@@ -105,7 +116,7 @@ $(".derry").click(function () {
         });
         
     
-    //set the features
+//set the features
     const features = [
         {
             position: new google.maps.LatLng(54.993454, -7.333464),
@@ -131,7 +142,7 @@ $(".derry").click(function () {
             type: 'travel'
         }
     ];
-    // Create markers.
+// Create markers.
     for (let i = 0; i < features.length; i++) {
         var marker = new google.maps.Marker({
             position: features[i].position,
@@ -145,22 +156,28 @@ $(".derry").click(function () {
         
     }
     marker.setMap(map);
-    
+
+//set the Jumbotron    
    
     $(".look-here").css( "visibility", "visible");
     $("#place_name").html("<h3>Celtic Park,Lone Moor Rd Co. Derry</h3>");
     $("#info_text") .html("<h5>Capacity - 18,500. SAT NAV - 54.993368N -7.333485W</h5>");
 });
-   
+ 
+//set Longford on the map
+ 
+ 
 $(".longford").click(function () {
     // do something for Longford
     map = new google.maps.Map(document.getElementById('map'), {
         center: {lat: 53.738881,  lng: -7.803449},
         zoom: 13
     });
-    
+
+//set the info window
+
     var contentString = '<p>Parking - South of Stadium & Retail Park ( North of Stadium ) (FREE)</p>'+
-            '<p>Bus-Stop - On 98 Ave. <a  href="http://www.irishrail.ie/train-timetables" target="_blank">TIMETABLE</a></p>'+
+            '<p>Train station - Earl St. <a  href="http://www.irishrail.ie/train-timetables" target="_blank">TIMETABLE</a></p>'+
             '<p>ATM - Circle K on R198</p>'
             +'<p>Bars & Restaurants - On Main St.  </p>';
             
@@ -168,7 +185,7 @@ $(".longford").click(function () {
           content: contentString
         });
     
-    //set the features
+//set the features
     const features = [
         {
             position: new google.maps.LatLng(53.739858, -7.805316),
@@ -191,7 +208,9 @@ $(".longford").click(function () {
             type: 'travel'
         }
     ];
-    // Create markers.
+    
+// Create markers.
+
     for (let i = 0; i < features.length; i++) {
         var marker = new google.maps.Marker({
             position: features[i].position,
@@ -205,10 +224,14 @@ $(".longford").click(function () {
     }
     marker.setMap(map);
     
+//set the Jumbotron
+    
     $(".look-here").css( "visibility", "visible");
     $("#place_name").html("<h3> Pearse Park, Longford</h3>");
     $("#info_text") .html("<h5>Capacity - 10,000. SAT NAV - 53.739689N -7.805238W</h5>");
 });
+
+//set Carrick on the map
 
 $(".carrick").click(function () {
     // do something for Carrick
@@ -217,6 +240,8 @@ $(".carrick").click(function () {
         zoom: 15
     });
     
+//set the info window
+
     var contentString = '<p>Parking - South of Stadium & Rosebank Retail Park (FREE)</p>'+
             '<p>Bus-Stop - On Bypass Road. <a href="https://www.buseireann.ie/news_timetable.php" target="_blank">TIMETABLE</a></p>'+
             '<p>ATM - Main St & N4 Service Station</p>'
@@ -226,7 +251,7 @@ $(".carrick").click(function () {
           content: contentString
         });
     
-    //set the features
+//set the features
     const features = [
         {
             position: new google.maps.LatLng(53.948333, -8.076121),
@@ -252,7 +277,9 @@ $(".carrick").click(function () {
             type: 'travel'
         }
     ];
-    // Create markers.
+    
+// Create markers.
+
     for (let i = 0; i < features.length; i++) {
         var marker = new google.maps.Marker({
             position: features[i].position,
@@ -265,13 +292,15 @@ $(".carrick").click(function () {
         });
     }
     marker.setMap(map);
+   
+//set the Jumbotron
     
     $(".look-here").css( "visibility", "visible");
     $("#place_name").html("<h3>Páirc Seán Mac Diarmada, Carrick-On-Shannon</h3>");
     $("#info_text") .html("<h5>Capacity - 9,331. SAT NAV - 53.948194N -8.076132W</h5>");
 });
 
-
+//set Clones on the map
 
 $(".clones").click(function () {
     // do something for clones
@@ -279,7 +308,9 @@ $(".clones").click(function () {
         center: {lat: 54.183449,  lng: -7.234562},
         zoom: 15
     });
-    
+
+//set the info window
+
     var contentString = '<p>Parking - North of Stadium & 98 Ave (FREE)</p>'+
             '<p>Bus-Stop - On 98 Ave. <a href="https://www.buseireann.ie/news_timetable.php" target="_blank">TIMETABLE</a></p>'+
             '<p>ATM - On Fermanagh st. & The Diamond</p>'
@@ -289,8 +320,8 @@ $(".clones").click(function () {
           content: contentString
         });
         
-        
-    //set the features
+//set the features
+
     const features = [
         {
             position: new google.maps.LatLng(54.185339, -7.234186),
@@ -319,7 +350,9 @@ $(".clones").click(function () {
             type: 'travel'
         }
     ];
-    // Create markers.
+    
+// Create markers.
+
     for (let i = 0; i < features.length; i++) {
         var marker = new google.maps.Marker({
             position: features[i].position,
@@ -334,10 +367,16 @@ $(".clones").click(function () {
     }
     marker.setMap(map);
     
+//set the Jumbotron
+    
     $(".look-here").css( "visibility", "visible");
     $("#place_name").html("<h3>St Tiernach's Park, Clones, Co. Monaghan</h3>");
     $("#info_text") .html("<h5>Capacity - 36,000. SAT NAV - 54.185870N -7.233751W</h5>");
 });
+
+
+//set newry on the map
+
 
 $(".newry").click(function () {
     // do something for newry
@@ -346,6 +385,8 @@ $(".newry").click(function () {
         zoom: 14
     });
     
+//set the info window
+
     var contentString = '<p>Parking - Warrenpoint Road & Buttercrane Centre (FREE)</p>'+
             '<p>Train Station - Just off the A1 motorway <a href="https://www.translink.co.uk/" target="_blank">TIMETABLE</a></p>'+
             '<p>ATM - On Albert Basin</p>'
@@ -355,7 +396,9 @@ $(".newry").click(function () {
           content: contentString
         });
     
-    //set the features
+    
+//set the features
+
     const features = [
         {
             position: new google.maps.LatLng(54.1614417, -6.334012),
@@ -381,7 +424,9 @@ $(".newry").click(function () {
             type: 'travel'
         }
     ];
-    // Create markers.
+    
+// Create markers.
+
     for (let i = 0; i < features.length; i++) {
         var marker = new google.maps.Marker({
             position: features[i].position,
@@ -395,10 +440,15 @@ $(".newry").click(function () {
     }
     marker.setMap(map);
     
+//set the Jumbotron
+    
     $(".look-here").css( "visibility", "visible");
     $("#place_name").html("<h3>Páirc Esler, Newry, Co. Down</h3>");
     $("#info_text") .html("<h5>Capacity - 25,000. SAT NAV - 54.163446N -6.333132W</h5>");
 });
+
+//set the map
+
 
 function initMap() {
     var map = new google.maps.Map(document.getElementById('map'), {
@@ -410,7 +460,7 @@ function initMap() {
     google.maps.event.addListener(searchBox, 'places_changed', function () {
         var places = searchBox.getPlaces();
 
-        // bounds
+// bounds
         var bounds = new google.maps.LatLngBounds();
         var i, place;
 
