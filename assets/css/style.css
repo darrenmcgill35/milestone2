@@ -244,7 +244,7 @@ div#map {
 /*--------------------------------------------media queries*/
 
 
-@media (max-width:960px) {
+@media (max-width:1000px) {
   .roundname {
     display: none;
   }
@@ -279,7 +279,7 @@ div#map {
 }
 
 
-@media (min-width:960px) {
+@media (min-width:1000px) {
   .venue-lg {
     display: none;
   }
