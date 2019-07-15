@@ -141,13 +141,14 @@ ul {
   padding-top: 0px;
   padding-bottom: 5px;
 }
-
-
+#newry{
+  padding-bottom: 30px;
+}
 /*--------------------------------------------Map*/
 
 
 div#map {
-    min-height: 450px;
+    min-height: 460px;
 }
 .map-section{
   background-color: #d7e0ef;
