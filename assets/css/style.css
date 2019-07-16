@@ -34,7 +34,7 @@
   background-image: linear-gradient(to right bottom, rgba(150, 100, 150, 0.6), rgba(120, 100, 96, 0.6)), url(../images/crokepark.jpg);
   background-position: center center;
   background-size: cover;
-  height: 110vh; 
+  height: 100vh; 
 }
 .heading-primary-main {
   display: block;
