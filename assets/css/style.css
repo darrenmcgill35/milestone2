@@ -254,25 +254,25 @@ div#map {
   
 }
 
-@media (max-width: 400px) {
+@media (max-width: 1000px) {
   #monaghan-lg {
     display: none;
   }
 }
 
-@media (min-width: 400px) {
+@media (min-width: 1000px) {
   #longford-xs {
     display: none;
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 1000px) {
   #longford-lg {
     display: none;
   }
 }
 
-@media (min-width: 400px) {
+@media (min-width: 1000px) {
   #monaghan-xs {
     display: none;
   }
