@@ -34,7 +34,7 @@
   background-image: linear-gradient(to right bottom, rgba(150, 100, 150, 0.6), rgba(120, 100, 96, 0.6)), url(../images/crokepark.jpg);
   background-position: center center;
   background-size: cover;
-  height: 90vh; 
+  height: 110vh; 
 }
 .heading-primary-main {
   display: block;
@@ -105,7 +105,8 @@ ul {
 .fixtures-list .match-item .roundname {
   font-weight: bold;
   font-size: 20px;
-  float: left;
+  padding-left: 0;
+  padding-right: 0;
 }
 .fixtures-list .match-item .hometeam {
   padding-left:5px;
@@ -135,10 +136,7 @@ ul {
   height: 30px;
   width:30px;
 }
-.col{
-  padding-left: 0;
-  padding-right: 0;
-}
+
 
 #monaghan-xs{
   padding-left:5px;
@@ -164,12 +162,8 @@ ul {
 
 
 div#map {
-    min-height: 460px;
+    min-height: 480px;
 }
-.map-section{
-  background-color: #d7e0ef;
-}
-
 
 /*--------------------------------------------footer*/
 
