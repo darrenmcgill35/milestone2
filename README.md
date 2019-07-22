@@ -32,7 +32,7 @@ This website is designed and created for a wide varity of people.
 Responsive design was important as members of the public could check locations, buy 
 tickets and check results on their mobiles or tablets when they are on there way to games.  
 
-Click on the directory [user-design-experience](https://github.com/darrenmcgill35/milestone for all the Planes, 
+Click on the directory [user-design-experience](https://github.com/darrenmcgill35/milestone2/tree/master/assets/user-design-experience) for all the Planes, 
 including User Stories, wireframes, mock-ups, diagrams that I created as part 
 of the design process.
 
